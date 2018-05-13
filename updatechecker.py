@@ -16,3 +16,5 @@ r = requests.head(url)
 if r.status_code == 302:
     print("Update found! \n Starting update..")
     updater.updateFactorio(versionnum)
+else:
+    print("No updates found")
